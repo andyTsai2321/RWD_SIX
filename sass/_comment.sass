@@ -1,0 +1,61 @@
+/*客戶評論*/
+
+.comment
+  padding: 50px 0
+  background-color: #EFE9E7
+  color: #3D1101
+
+.com_heading
+  letter-spacing: 2px
+  font-size: 2.4rem
+  text-align: center
+
+.com_wrap
+  display: table
+  width: 90%
+  margin: 0 auto
+  table-layout: fixed
+
+.com_box
+  width: 100%
+  display: table-cell
+  padding-top: 51px
+
+.com_nickname
+  font-size: 1.8rem
+  padding-left: 13px
+  vertical-align: 130%
+  display: inline-block
+
+.com_text
+  width: 70%
+  margin: 0 auto
+  padding-top: 22px
+  text-align: left
+  font-size: 1.6rem
+  line-height: 24px
+
+.com_job
+  width: 40%
+  color: rgba(61, 17, 0, 0.75)
+  font-size: 1.6rem
+  line-height: 24px
+  float: right
+  padding-top: 16px
+
+.com_box img
+  max-width: 100%
+  height: auto
+  border-radius: 100px
+
+@media (max-width: 768px)
+  .com_wrap
+    width: 98%
+
+@media (max-width: 480px)
+  .com_box
+    display: block
+  .com_wrap
+    width: 90%
+  .com_job
+    width: 30%

@@ -1,0 +1,77 @@
+/*介紹*/
+
+.introduce
+  padding: 50px 0
+  background-color: #EFE9E7
+  color: #3D1101
+
+.int_heading
+  letter-spacing: 2px
+  font-size: 2rem
+  text-align: center
+  line-height: 32px
+
+.hr
+  overflow: hidden
+  text-align: center
+  span
+    display: inline-block
+    padding: 0 0.5em
+    position: relative
+    &:before, &:after
+      border-top: 1px solid
+      content: ""
+      position: absolute
+      top: 50%
+      width: 9rem
+    &:before
+      right: 100%
+    &:after
+      left: 100%
+
+.int_wrap
+  display: table
+  width: 80%
+  margin: 50px auto 0
+  table-layout: fixed
+
+.int_box
+  width: 100%
+  display: table-cell
+  text-align: center
+
+.int_title
+  margin-top: 20px
+  font-size: 1.8rem
+
+.int_text
+  width: 70%
+  margin: 0 auto
+  padding-top: 11px
+  text-align: left
+  font-size: 1.6rem
+  line-height: 20px
+
+.int_box img
+  max-width: 100%
+  height: auto
+  border-radius: 100px
+
+@media (max-width: 768px)
+  .int_wrap
+    width: 100%
+  .int_box
+    padding-left: 20px
+  .int_text
+    width: 90%
+
+@media (max-width: 480px)
+  .int_wrap, .int_box
+    display: block
+    padding: 0
+    margin-bottom: 40px
+  .int_text
+    width: 70%
+  .hr span
+    &:before, &:after
+      display: none
